@@ -35,3 +35,11 @@ body{
 #hide{
     display:none;
 }
+
+.strt{
+    color:white;
+    background-color: rgb(41, 41, 243);
+    width:auto;
+    height:30px;
+    border-radius:10px;
+}

@@ -6,10 +6,12 @@ let level=0;
 let score=0;
 let highScore=0;
 
-document.addEventListener("keydown",function(){
+let strt=document.querySelector(".strt");
+strt.addEventListener("click",function(){
     if(started==false){
      console.log("Game started");
      started=true;
+     strt.style.display="none";
      document.getElementById("hide").style.display="none";
      levelUp();
     }
@@ -87,6 +89,7 @@ function check(){
         document.querySelector("p").innerHTML=`Your High-Score is <b>${highScore}</b> </p>`;
         document.getElementById("hide").style.display="block";
         reset();
+        strt.style.display='';
     }
 }
 
